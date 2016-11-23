@@ -13,13 +13,6 @@
                 <CompositeTransform Rotation="0.107"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <Button x:Name="Homebutton" Content="Home" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,0.469"/>
-        <Button x:Name="SubmissionCheckButton" Content="Submission Check" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,0.469"/>
-        <Button x:Name="ReportRequestButton" Content="Report Request" HorizontalAlignment="Left" Margin="361,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,0.469"/>
-        <Button x:Name="SubmitCourseworkButton" Content="Submit Coursework" HorizontalAlignment="Left" Margin="71,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,0.469"/>
-        <Button x:Name="PlaceholderButton" Content="Button" HorizontalAlignment="Left" Margin="483,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.231,0.469"/>
-        <Button x:Name="StaffLoginButton" Content="Staff Login" HorizontalAlignment="Left" Margin="792,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="StudentLoginButton" Content="Student Login" HorizontalAlignment="Left" Margin="888,10,0,0" VerticalAlignment="Top"/>
-
+       
     </Grid>
 </Page>
