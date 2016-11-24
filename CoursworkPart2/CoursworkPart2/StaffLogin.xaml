@@ -7,7 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,-1,919,524">
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" Height="30" Margin="10,151,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button x:Name="closeButton" Content="Close" HorizontalAlignment="Left" Height="30" Margin="258,151,0,0" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Username"  VerticalAlignment="Top" Width="340"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" Text="Password"  VerticalAlignment="Top" Width="340"/>
+        <TextBlock x:Name="staffTextBlock" HorizontalAlignment="Center" Height="38" Margin="141,10,117,0" TextWrapping="Wrap" Text="Staff Login" VerticalAlignment="Top" Width="103"/>
+       
     </Grid>
 </Page>

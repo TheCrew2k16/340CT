@@ -26,5 +26,10 @@ namespace CoursworkPart2
         {
             this.InitializeComponent();
         }
+
+        private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

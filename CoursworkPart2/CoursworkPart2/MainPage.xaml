@@ -8,11 +8,15 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="8.941,56.415,0,0" TextWrapping="Wrap" Text="Home" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="82.67" UseLayoutRounding="False" Width="506.118" d:LayoutRounding="Auto" SelectionChanged="textBlock_SelectionChanged" FontSize="48">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="1703*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="8.941,56.415,0,0" TextWrapping="Wrap" Text="Home" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="82.67" UseLayoutRounding="False" Width="506.118" d:LayoutRounding="Auto" SelectionChanged="textBlock_SelectionChanged" FontSize="48" Grid.ColumnSpan="2">
             <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="0.107"/>
             </TextBlock.RenderTransform>
         </TextBlock>
-       
+
     </Grid>
 </Page>
