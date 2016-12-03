@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="ECS_LoginSystem.AdminStudentList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ECS_LoginSystem"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="addStudent" Content="Add student" HorizontalAlignment="Left" Margin="10,590,0,0" VerticalAlignment="Top" Width="100" Click="addStaff_Click"/>
+        <Button x:Name="editStudent" Content="Edit student" HorizontalAlignment="Center" Margin="0,590,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="deleteStudent" Content="Delete student" HorizontalAlignment="Right" Margin="0,590,10,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="textBox" HorizontalAlignment="Center" FontSize="30" Margin="0,10,0,0" TextWrapping="Wrap" Text="Student List" VerticalAlignment="Top"/>
+
+
+        <ListView HorizontalAlignment = "Left" 
+         Height = "490" Margin = "10,80,10,0" 
+         VerticalAlignment = "Top" Width = "340" 
+         Name = "StudentList">
+
+            <ListViewItem HorizontalAlignment="Center">Already registered students</ListViewItem>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Margin="10" Text = "Student name" />
+                <TextBlock Margin="10" Text = "Student ID" Grid.Column="1"/>
+                <TextBlock Margin="10" Text = "Year" Grid.Column="2"/>
+            </Grid>
+            <ListViewItem Name="studentItem">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock Margin="10" Name="studentName" Text = "Mark Elshaw" Grid.Row="1"/>
+                    <TextBlock Margin="10" Name="studentId" Text = "570101" Grid.Column="1"></TextBlock>
+                    <TextBlock Margin="10" Name="Year"  Text = "Third" Grid.Column="2"></TextBlock>
+
+                </Grid>
+            </ListViewItem>
+        </ListView>
+    </Grid>
+</Page>
