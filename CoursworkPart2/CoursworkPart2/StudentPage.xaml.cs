@@ -20,16 +20,19 @@ namespace CoursworkPart2
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class StaffLogin : Page
+    public sealed partial class StudentPage : Page
     {
-        public StaffLogin()
+        public StudentPage()
         {
             this.InitializeComponent();
         }
 
-        private void textBox_TextChanged(System.Object sender, TextChangedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
-
+            var frame = new Frame();
+            frame.Navigate(typeof(MainPage), null);
+            Window.Current.Content = frame;
+            Window.Current.Activate();
         }
     }
 }

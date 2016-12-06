@@ -5,18 +5,18 @@
     xmlns:local="using:CoursworkPart2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="280" Width="474">
 
+   
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="217*"/>
-            <ColumnDefinition Width="1703*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="8.941,56.415,0,0" TextWrapping="Wrap" Text="Home" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="82.67" UseLayoutRounding="False" Width="506.118" d:LayoutRounding="Auto" SelectionChanged="textBlock_SelectionChanged" FontSize="48" Grid.ColumnSpan="2">
-            <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="0.107"/>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="41" Width="66" FontSize="20" />
+        <TextBox x:Name="username" HorizontalAlignment="Left" Height="11" Margin="93,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="361"/>
+        <TextBlock x:Name="usernameLabel" HorizontalAlignment="Left" Height="32" Margin="10,58,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="78"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="11" Margin="93,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="361"/>
+        <TextBlock x:Name="passwordLabel" HorizontalAlignment="Left" Height="32" Margin="10,95,0,0" TextWrapping="Wrap" Text="password:" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="loginButton" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="93,161,0,0" Width="130"/>
+        <Button x:Name="closeButton" Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="324,161,0,0" Width="130"/>
+        <Button x:Name="staffDebug" Content="StaffDebug" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,222,0,0" Click="staffDebug_Click"/>
+        <Button x:Name="studentDebug" Content="StudentDebug" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,222,0,0" Click="studentDebug_Click"/>
     </Grid>
 </Page>

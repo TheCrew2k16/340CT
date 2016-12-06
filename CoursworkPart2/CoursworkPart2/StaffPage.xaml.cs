@@ -20,11 +20,19 @@ namespace CoursworkPart2
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SudentLogin : Page
+    public sealed partial class StaffPage : Page
     {
-        public SudentLogin()
+        public StaffPage()
         {
             this.InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            var frame = new Frame();
+            frame.Navigate(typeof(MainPage), null);
+            Window.Current.Content = frame;
+            Window.Current.Activate();
         }
     }
 }
