@@ -21,10 +21,21 @@ namespace CoursworkPart2
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class RequestReportPage : Page
-    {
+    { 
         public RequestReportPage()
         {
             this.InitializeComponent();
+
+            List<reports> listOfReports = new List<reports>();
+
+            listOfReports.Add(new reports { studentNo = "1234", assimentNo = "9876"}); //this is temp value will draw from the database later
+
+            reportList.ItemsSource = listOfReports;
+        }
+
+        private void listView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

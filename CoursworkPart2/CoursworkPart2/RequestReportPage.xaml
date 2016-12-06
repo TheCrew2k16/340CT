@@ -5,7 +5,26 @@
     xmlns:local="using:CoursworkPart2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="800" Width="1000">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="401,10,0,0" TextWrapping="Wrap" Text="Report Request" VerticalAlignment="Top" Height="36" Width="146" FontSize="20"/>
+        <TextBox x:Name="studentNumTextBox" HorizontalAlignment="Left" Margin="29,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBox x:Name="assinmentNumTextBox" HorizontalAlignment="Left" Margin="29,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="29,115,0,0" TextWrapping="Wrap" Text="Enter Student Number:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="29,181,0,0" TextWrapping="Wrap" Text="Enter Assinment Number:" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="517" Margin="29,273,0,0" VerticalAlignment="Top" Width="931"/>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="29,248,0,0" TextWrapping="Wrap" Text="Results:" VerticalAlignment="Top"/>
+        <ListView x:Name="reportList" HorizontalAlignment="Left" Height="494" Margin="41,284,0,0" VerticalAlignment="Top" Width="900" SelectionChanged="listView_SelectionChanged">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding studentNo}"/>
+                        <TextBlock Text="{Binding assimentNo}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>            
+        </ListView>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="219,201,0,0" VerticalAlignment="Top"/>
+    </Grid>
 </Page>
